@@ -17,6 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 STATIC_DIR = os.path.join(BASE_DIR, "static")
 TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
+#TEMPLATE_DIR_FORM_BASIC = os.path.join(BASE_DIR, "form_basic/templates")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -27,7 +28,7 @@ SECRET_KEY = '$rp#+!i$yp-wqec*(t#l_nvj%73upy232*5w4^@o$)jcci^zyx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['203.70.68.246']
+ALLOWED_HOSTS = ['203.70.68.246', '203.70.68.228']
 
 
 # Application definition

@@ -33,7 +33,7 @@ def populate(N=5):
 
 
 if __name__ == '__main__':
-    addNum = 3
+    addNum = 30
     print("populating script!")    
     populate(addNum)
     print("add:%s doned" % addNum)

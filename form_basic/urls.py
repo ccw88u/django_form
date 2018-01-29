@@ -6,5 +6,6 @@ from form_basic import views
 urlpatterns = [
    url(r'^$', views.index, name='index'), 
    url(r'^reguser$', views.reguser, name='reguser'),  
-   
+   url(r'^statictest$', views.statictest, name='statictest'),
+   url(r'^websiteadd$', views.websiteadd, name='websiteadd'),
 ]

@@ -3,7 +3,7 @@
 {% block title %}reguser.html block:title{% endblock %}
 
 {% block content %}
-    <form method="POST">
+    <form enctype="multipart/form-data" method="POST" >
       
       {{form.as_p}}
       {% csrf_token %}

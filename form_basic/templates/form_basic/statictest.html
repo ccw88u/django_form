@@ -1,0 +1,16 @@
+{% extends 'form_basic/base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}statictest.html block:title{% endblock %}
+
+
+form-basic/templates/form-basic/statictest.html <br>
+
+
+{% block content %}
+you will see static image show here<img src="{% static "images/test.jpg" %}" alt="test.jpg">
+{% endblock %}
+
+
+

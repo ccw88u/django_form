@@ -15,7 +15,6 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-STATIC_DIR = os.path.join(BASE_DIR, "static")
 TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 #TEMPLATE_DIR_FORM_BASIC = os.path.join(BASE_DIR, "form_basic/templates")
 
@@ -104,7 +103,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_DIR = os.path.join(BASE_DIR,"static")
 STATICFILES_DIRS = [
-    STATIC_DIR,
+    STATIC_DIR,  
+    os.path.join(BASE_DIR, "common_static"),
+    '/var/www/static/',
 ]
+
+
+MEDIA_DIR = os.path.join(BASE_DIR,'media')
+MEDIA_ROOT = MEDIA_DIR
+MEDIA_URL = '/media/'

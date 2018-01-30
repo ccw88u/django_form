@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from django.db import models
 
 
@@ -17,11 +18,11 @@ class Reguser(models.Model):
     profile_pic = models.ImageField(upload_to='profile_pics', blank=True)
 
 
-
 class website_subject(models.Model):
     subject_name = models.CharField(max_length=264, unique=True)
 
     def __unicode__(self): 
+    # 在Python3中使用 def __str__(self):        
         return u"%s" % (self.subject_name)
 
 class website(models.Model):
@@ -32,4 +33,5 @@ class website(models.Model):
     date = models.DateField()
 
     def __unicode__(self): 
+    # 在Python3中使用 def __str__(self):        
         return u"%s" % (self.title)

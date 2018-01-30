@@ -33,7 +33,10 @@ def populate(N=5):
         fake_uri = fakegen.url()
         fake_date = fakegen.date_time()
         ps('fake_title', fake_title)
+        ## random 取得 website_subject instance
         Random_subject = allsubjectlst[random.randint(0, len(allsubjectlst)-1)]
+        ## 直接抓取其中一個 instance
+        #Random_subject = website_subject.objects.get(pk=4)
         ps('Random_subject', Random_subject)
 
         ## Create the new Reguser entry
@@ -45,7 +48,7 @@ def ps(fn,fv=''):
     print(fn, fv)
 
 if __name__ == '__main__':
-    addNum = 10
+    addNum = 3
     print("populating script!")    
     populate(addNum)
     print("add:%s doned" % addNum)

@@ -15,8 +15,9 @@ def mediatest(request):
     return render(request, 'form_basic/mediatest.html')
 
 def testforloop(request):
+    formdic = {'ip': '203.70.68.228', 'content': '2018.02.02 python 教育訓練課程'}
     formlst = [('name', 'owen'), ('tel', '09XXXXXXXX'), ('addr', '台北市內湖路......')]
-    return render(request, 'form_basic/testforloop.html', {'formlst':formlst} )
+    return render(request, 'form_basic/testforloop.html', {'formlst':formlst, 'formdic':formdic} )
 
 def reguser(request):
     form = ReguserForm()

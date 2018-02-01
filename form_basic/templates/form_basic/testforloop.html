@@ -12,6 +12,11 @@ form-basic/templates/form-basic/testforloop.html <br>
 
 testforloop block:content
 
+<h2>This is for dictionary</h2>
+IP : {{formdic.ip}} <br>
+Content: {{formdic.content}} <br>
+
+<h2>This is for List</h2>
 {% for lstT, lstV in formlst %}
     '<br>' {{lstT}}: {{lstV}}
 

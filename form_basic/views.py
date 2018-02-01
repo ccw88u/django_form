@@ -14,6 +14,10 @@ def mediatest(request):
 
     return render(request, 'form_basic/mediatest.html')
 
+def testforloop(request):
+    formlst = [('name', 'owen'), ('tel', '09XXXXXXXX'), ('addr', '台北市內湖路......')]
+    return render(request, 'form_basic/testforloop.html', {'formlst':formlst} )
+
 def reguser(request):
     form = ReguserForm()
 

@@ -8,4 +8,5 @@ urlpatterns = [
    url(r'^reguser$', views.reguser, name='reguser'),  
    url(r'^statictest$', views.statictest, name='statictest'),
    url(r'^websiteadd$', views.websiteadd, name='websiteadd'),
+   url(r'^testforloop$', views.testforloop, name='testforloop'),
 ]

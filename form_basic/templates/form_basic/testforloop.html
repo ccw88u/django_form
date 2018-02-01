@@ -1,0 +1,20 @@
+{% extends 'form_basic/base.html' %}
+
+{% block title %}testforloop.html block:title{% endblock %}
+
+
+form-basic/templates/form-basic/testforloop.html <br>
+
+
+
+
+{% block content %}
+
+testforloop block:content
+
+{% for lstT, lstV in formlst %}
+    '<br>' {{lstT}}: {{lstV}}
+
+{% endfor %}
+
+{% endblock %}

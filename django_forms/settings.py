@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Django settings for django_forms project.
 
@@ -39,7 +40,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'form_basic'
+    'debug_toolbar',
+    'form_basic',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -51,6 +53,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware', 
 )
 
 ROOT_URLCONF = 'django_forms.urls'
@@ -114,3 +117,7 @@ STATICFILES_DIRS = [
 MEDIA_DIR = os.path.join(BASE_DIR,'media')
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+
+
+##請加上你的pc連到主機IP (Please enter your pc connected to the host IP)
+INTERNAL_IPS = ['127.0.0.1', '203.70.68.6']

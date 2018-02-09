@@ -48,7 +48,7 @@ def ps(fn,fv=''):
     print(fn, fv)
 
 if __name__ == '__main__':
-    addNum = 3
+    addNum = 30
     print("populating script!")    
     populate(addNum)
     print("add:%s doned" % addNum)
